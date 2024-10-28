@@ -2,7 +2,7 @@
 {
     public class Stack
     {
-        static List<string> stack = new List<string>();
+        List<string> stack = new List<string>();
 
         public int Size
         {

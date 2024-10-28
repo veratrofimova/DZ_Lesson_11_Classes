@@ -45,8 +45,7 @@ try
                 textFromConsole = textFromConsole.Replace(commandText[0], "").Trim();
                 elementsFromConsole = textFromConsole.Split(',');
 
-                var stack2 = new Stack(AdditionalMethods.Reverse(elementsFromConsole));
-                stack.Merge(stack2);
+                stack.Merge(new Stack(elementsFromConsole));
 
                 Console.WriteLine($"Size = {stack.Size}, Top = '{stack.Top}'");
                 break;
